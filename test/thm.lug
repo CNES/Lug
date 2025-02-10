@@ -1,0 +1,10 @@
+Theorem T : Imp(And(A,And(B,C)),And(B,A)).
+Proof.
+	apply Imp_1.
+	apply And_1.
+	apply And_0.
+	apply axiom.
+	apply And_0.
+	apply And_0.
+	apply axiom.
+	Qed.

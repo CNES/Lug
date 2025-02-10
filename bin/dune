@@ -1,0 +1,4 @@
+(executable
+ (public_name lug)
+ (name main)
+ (libraries lug))

@@ -1,0 +1,47 @@
+Theorem T : Imp(And(A,And(B,C)),And(B,A)).
+Proof.
+    apply Imp_2.
+    apply auto.
+    apply auto.
+	Qed.
+
+Theorem U : Imp(And(A,B),Or(B,A)).
+Proof.
+    apply Imp_2.
+    apply Or_2.
+    apply Or_1.
+    apply axiom.
+    apply And_0.
+    apply axiom.
+    apply Or_2.
+    apply And_1.
+    apply And_0.
+    apply axiom.
+    apply And_0.
+    apply axiom.
+    Qed.
+
+Theorem Ex : Imp(And(A,B),A).
+Proof.
+    apply Imp_2.
+    apply And_0.
+    apply axiom.
+    apply And_1.
+    apply And_0.
+    apply axiom.
+    apply And_0.
+    apply axiom.
+    Qed.
+
+Theorem Peirce : Imp(Imp(Imp(A,B),A),A).
+Proof.
+    apply Imp_2.
+    apply Imp_0.
+    apply axiom.
+    apply Imp_2.
+    apply axiom.
+    apply axiom.
+    apply Imp_0.
+    apply Imp_1.
+    apply Imp_2.
+    Qed.
